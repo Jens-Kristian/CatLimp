@@ -1,6 +1,6 @@
 class Cat {
-    private String name;
-    private boolean chipped;
+    private final String name;
+    private final boolean chipped;
 
     public Cat(String catName, boolean isChipped) {
         name = catName;
@@ -15,7 +15,5 @@ class Cat {
         return chipped;
     }
 
-    public String toString() {
-        return "Cat name: " + name + ", chipped: " + chipped;
-    }
+    public String toString() {return "Cat name: " + name + ", chipped: " + chipped;}
 }
